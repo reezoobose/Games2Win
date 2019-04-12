@@ -72,32 +72,11 @@ namespace _Script
             transform.localRotation = _defaultRotation;
             if (resetCamera.gameObject.activeInHierarchy) { resetCamera.gameObject.SetActive(false); }
         }
+
         /// <summary>
-        /// Move
+        /// Rotate .
         /// </summary>
-        public void Move(TouchDirection direction)
-        {
-            switch (direction)
-            {
-                case TouchDirection.Left:
-                    transform.RotateAround(target.position, Vector3.up, xSpeed);
-
-                    if (!resetCamera.gameObject.activeInHierarchy) { resetCamera.gameObject.SetActive(true);}
-                    break;
-                case TouchDirection.Right:
-                    transform.RotateAround(target.position, Vector3.up,- xSpeed);
-                    if (!resetCamera.gameObject.activeInHierarchy) { resetCamera.gameObject.SetActive(true); }
-                    break;
-                case TouchDirection.Up:
-                    break;
-                case TouchDirection.Down:
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException("direction", direction, null);
-            }
-           
-        }
-
+        /// <param name="direction"></param>
         public void Rotate(TouchDirection direction)
         {
             switch (direction)
