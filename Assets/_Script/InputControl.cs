@@ -33,7 +33,7 @@ namespace _Script
         {
             Vector3 dragVectorDirection = (eventData.position - eventData.pressPosition).normalized;
             var direction = GetDragDirection(dragVectorDirection);
-            CameraOrbit.cameraOrbitReference.Rotate(direction);
+            CameraOrbit.cameraOrbitReference.RotateAround(direction);
         }
         /// <summary>
         /// Get touch direction.
