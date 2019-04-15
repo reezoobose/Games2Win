@@ -92,7 +92,12 @@ ModelImporter:
     13700002: c04_top
     13700004: fb04
     13700006: hair09
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: C04
+    second: {fileID: 2800000, guid: e5cbaea58db7a544e8f2ccc10b4b09f8, type: 3}
   materials:
     importMaterials: 1
     materialName: 0

@@ -154,7 +154,12 @@ ModelImporter:
     13700002: Hair_FlatTop
     13700004: hands
     13700006: m07
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: d03
+    second: {fileID: 2800000, guid: 3fa3f482464cfbd4288580180067a5f4, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
